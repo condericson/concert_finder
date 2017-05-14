@@ -1,0 +1,322 @@
+* {
+    font-family: Roboto;
+    color: white;
+    box-sizing: border-box;
+}
+.loading {
+    font-size: 70px;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    color: white;
+    position: fixed;
+    z-index: 201;
+}
+.pagecover {
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    z-index: 200;
+    position: fixed;
+}
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url('crowdcropped.png') center center no-repeat fixed;
+    background-size: cover;
+}
+.container {
+    z-index: 150;
+    background-color: rgba(38, 0, 38, 0.88);
+}
+
+.nav1 {
+    margin-top: 275px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav2 {
+    background-color: #5F1A7D;
+    width: 100%;
+    height: 47px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navtitle1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Trebuchet MS;
+    color: white;
+    margin: 0;
+    text-shadow: 0px 0px 20px #000000;
+}
+.navtitle2 {
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Trebuchet MS;
+    color: white;
+    margin: 0;
+    padding-left: 5px;
+    width: 400px;
+}
+.searchcontainer1 {
+    position: relative;
+    width: 80%;
+    height: 40px;
+    margin: 0 auto;
+    z-index: 99;
+    max-width: 470px;
+}
+
+.searchcontainer2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 40px;
+    z-index: 99;
+    padding: 5px;
+}
+
+input {
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    border: 0;
+    padding-left: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 30px;
+    height: auto;
+    border-radius: 5px;
+    width: 86%;
+    outline: none;
+}
+.buttoncenter {
+    position: relative;
+}
+.searchbutton {
+    position: absolute;
+    right: 0;
+    height: 39px;
+    width: 35px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    border: 0;
+    font-size: 30px;
+    font-family: Lato;
+    line-height: 10px;
+    color: rgba(254,254,254,0.7);
+}
+
+.searchbutton2 {
+    position: absolute;
+    right: 0;
+    height: 38px;
+    width: 41px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    border: 0;
+    font-size: 30px;
+    font-family: Lato;
+    line-height: 10px;
+    color: rgba(254,254,254,0.7);
+}
+
+.spelling {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    position: relative;
+    top: 45px;
+    left: 2px;
+    z-index: 400;
+    text-shadow: 0px 0px 10px #000000;
+    margin-top: 0;
+}
+#results {
+    padding: 80px 4%;
+}
+#upcoming {
+    margin-left: 3%;
+    text-shadow: 0px 0px 20px #000000;
+    text-align: center;
+}
+#eventlist {
+    border-width: 5px;
+    margin: 0 5%;
+    background-color: rgba(116, 40, 128, 0.6);
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* padding: 5px; */
+}
+.eventitem {
+    padding-bottom: 20px;
+}
+.month {
+    font-size: 42px;
+    font-weight: 700;
+    font-family: Trebuchet MS;
+    padding: 20px 0px 20px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+}
+.mapbutton {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    display: inline-block;
+}
+.tixbutton {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.venue, .artists {
+    font-size: 28px;
+    line-height: 1.3em;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+}
+#mapcontainer {
+    height: 400px;
+    width: 90%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.closebutton {
+    width: 20px;
+    height: 20px;
+    line-height: 8px;
+    position: absolute;
+    top: -24px;
+    right: 0;
+    cursor: pointer;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 15px;
+    background-color: black;
+}
+.x {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+#noresults {
+    color: red;
+    font-size: 24px;
+    position: relative;
+    top: 50px;
+    left: 2px;
+}
+.loading {
+    color: white;
+}
+.hidden {
+    display: none;
+}
+.artists {
+    margin: 0 30px 10px;
+}
+.artists, .date, .address {
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+}
+.date, .address, .mapbutton {
+    margin-left: 30px;
+}
+.address {
+    margin-bottom: 5px;
+}
+.powered1 {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 5px;
+    padding: 0px 10px 5px 10px;
+}
+.powered2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.didYouMean {
+    padding: 80px 4%;
+}
+
+.artistOption {
+    list-style: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 715px) {
+    .navtitle2, .searchcontainer2 {
+        position: static;
+        display: inline-block;
+    }
+    .nav2 {
+        text-align: center;
+        height: 100px;
+    }
+    .inlinesearch {
+        position: static;
+        width: 80%;
+    }
+    .buttoncenter2 {
+        display: inline-block;
+    }
+    .searchbutton2 {
+        display: inline-block;
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .nav1 {
+        margin-top: 150px;
+    }
+
+    .navtitle1 {
+        font-size: 45px;
+    }
+    .maininput {
+        font-size: 25px;
+    }
+    .form2 {
+        width: 100%;
+    }
+    .searchcontainer2 {
+        width: 90%;
+    }
+}

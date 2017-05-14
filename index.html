@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="concertfinder.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>Concert Finder</title>
+</head>
+<body>
+    <div class="pagecover"><div class="loading">Loading...</div></div>
+
+
+
+  <div class="container">
+
+    <header>
+      <nav id="nav" class="nav1">
+         <p id="navtitle" class="navtitle1">Concert Finder</p>
+          <div id="search" class="searchcontainer1">
+            <form action="#" id="js-search-form" class="form1">
+              <input type="text" name="js-artist" id="js-artist" class="js-artist maininput" placeholder="Who's the artist?" autocomplete="off">
+              <div class="buttoncenter"><button type="submit" id="searchbutton" class="searchbutton">></button></div>
+            </form>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <div class="didYouMean hidden">
+        <h1>Did you mean:</h1>
+        <div class="didYouMeanList">
+          <ul class="didYouMeanUl"><p>Here's the ul</p></ul>
+        </div>
+      </div>
+      <div id="results" class="hidden">
+        <h1 id="upcoming" class="hidden">Upcoming events for <span class="artistname"></span></h1>
+        <div id="eventlist" class="hidden"></div>
+      </div>
+    </main>
+
+    <footer id="powered" class="powered1">Powered by the awesome people at <a href="https://www.seatgeek.com">SeatGeek</a> and <a href="https://www.google.com/maps">Google Maps</a>.</footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>
+  <script type="text/javascript" src="concertfinder.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEE1vUc_I0eZhU1ScrZSS4kukTmZM0Ndo&callback="></script>
+</body>
+</html>
